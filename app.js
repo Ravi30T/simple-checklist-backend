@@ -104,7 +104,7 @@ app.get('/applications', async(request, response) => {
         response.status(201).send(getApplications)
     }
     else{
-        response.status(201).send({message: "No Application Details Available"})
+        response.status(401).send({message: "No Application Details Available"})
     }
       
 })
